@@ -155,7 +155,7 @@ The image has the following ports automatically exposed:
 -   `8547` TCP, used by the GraphQL API
 -   `30303` TCP and UDP, used by the P2P protocol running the network
 
-_Note, if you are running an Ethereum client inside a Docker container, you should mount a data volume as the client's data directory (located at `/root/.ethereum` inside the container) to ensure that downloaded data is preserved between restarts and/or container life-cycles._
+_Note, if you are running an Ethereum client inside a Docker container, you should mount a data volume as the client's data directory (located at `/root/.ethereum` inside the container) to ensure that downloaded data is preserved between restarts and/or container life-cycles. When running on macOS, a significant performance boost can be achieved by using the [`delegated`](https://docs.docker.com/docker-for-mac/osxfs-caching/) mount option._
 
 ## Build go-ethereum from source code
 
